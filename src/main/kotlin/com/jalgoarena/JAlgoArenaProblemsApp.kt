@@ -6,10 +6,12 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.web.client.RestTemplate
+import springfox.documentation.swagger2.annotations.EnableSwagger2
 
 @SpringBootApplication
 @EnableEurekaClient
 @Configuration
+@EnableSwagger2
 open class JAlgoArenaProblemsApp {
     @Bean
     open fun restTemplate() = RestTemplate()
